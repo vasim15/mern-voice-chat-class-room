@@ -1,0 +1,20 @@
+POST http://localhost:5000/api/send-otp HTTP/1.1
+Content-Type: application/json
+
+{
+"phone": "+915657565753"
+}
+
+# send Request
+
+POST http://localhost:5000/api/verify-otp HTTP/1.1
+Content-Type: application/json
+
+{
+"phone": "+915657565753"
+}
+
+###
+GET http://localhost:5000/api/rooms HTTP/1.1
+Content-Type: application/json
+
